@@ -20,15 +20,39 @@
 	</properties>
 
 	<dependencies>
+	
+     <dependency>
+			<groupId>com.baidu.aip</groupId>
+			<artifactId>java-sdk</artifactId>
+			<version>4.12.0</version>
+<exclusions>
+    <exclusion>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+    </exclusion>
+</exclusions>
+		</dependency>
+
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+
+
 		</dependency>
-<dependency>
+        <dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-    
+        
 		<!-- Need this to compile JSP -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>

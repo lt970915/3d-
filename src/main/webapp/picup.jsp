@@ -44,20 +44,25 @@
 	        	 "pic":previewImg.src
 	         },
 
-	         success :function(data) {
-
-	             alert("OK");
-
+	         success :function(picret) {
+	        	 //var result= "1";
+	        	 //document.getElementById('div').innerHTML =result ;
+	        	 $("#ImagePic").attr("src","data:image/gif;base64,"+picret);
+                 
 	         },
 
-	       /* error :function(e) {
+	       error :function(e) {
 
 	           alert("error");
-	        }*/}) 
+	        }}) 
   }
     
  </script>
  <button type="button" onclick="myFunction()">calaulate</button>
+<div id="div">
+<img id="ImagePic" src="" height="1000" alt="Image return">
+</div>
+
 </body>
 </html>
 
