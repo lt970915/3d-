@@ -1,0 +1,12 @@
+com\exampl\demo\faceidentify\Testclass.class
+com\exampl\demo\faceidentify_I\BaseFunctions_I.class
+com\exampl\demo\baiduapi\FileUtil.class
+com\exampl\demo\faceidentify\Normalimage.class
+com\exampl\demo\baiduapi\HttpUtil.class
+com\exampl\demo\faceidentify\BaseFunctions.class
+com\exampl\demo\faceidentify\AuthService.class
+com\exampl\demo\faceidentify_I\Normalimage_I.class
+com\exampl\demo\controller\send.class
+com\exampl\demo\tee.class
+com\exampl\demo\baiduapi\Base64Util.class
+com\exampl\demo\controller\begin.class
